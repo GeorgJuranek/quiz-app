@@ -14,7 +14,7 @@ h2:hover {
 }
 
 p:hover {
-  background-color: rgba(255, 255, 0, 0.6);
+  background-color: var(--highlight);
 }
 
 section {
@@ -27,4 +27,8 @@ section {
 section:last-child {
   border-bottom-style: solid;
   border-bottom-width: 2px;
+}
+
+input {
+  width: 80%;
 }

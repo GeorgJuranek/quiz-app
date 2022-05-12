@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header class="big-box big-box--top">
@@ -20,12 +20,29 @@
       <a class="big-box--items" href="">PROFILE</a>
     </nav>
 
-    <main>
-      <img src="" alt="Profile photo" />
+    <main class="profilebox">
+      <img
+        class="profile--image"
+        src="images/maxmuster.jpg"
+        alt="Welcome back"
+      />
 
-      <h3>name, name</h3>
+      <u><h3>MEMBER</h3></u>
 
-      <p></p>
+      <div>
+        <h3 class="profilebox__item--decoration">Name:</h3>
+        <input type="text" />
+      </div>
+
+      <div>
+        <h3 class="profilebox__item--decoration">First Name:</h3>
+        <input type="text" />
+      </div>
+
+      <div>
+        <h3 class="profilebox__item--decoration">About you:</h3>
+        <input type="text" class="profilebox__aboutyou--input" />
+      </div>
 
       <div>
         <tag></tag>

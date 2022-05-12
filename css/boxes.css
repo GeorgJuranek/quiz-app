@@ -36,6 +36,41 @@
 }
 /*#############################################*/
 
+.profilebox {
+  border: dotted 5px black;
+
+  max-width: 70vw;
+  min-width: 50vw;
+
+  margin: 10%;
+  padding: 5%;
+
+  background-color: var(--highlight);
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  justify-items: start;
+  align-items: center;
+
+  z-index: -1;
+}
+
+.profilebox__item--decoration {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+
+  display: inline;
+}
+
+.profilebox__aboutyou--input {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  width: 15em;
+}
+
 /*#############################################*/
 @media (max-width: 273px) {
   .big-box {

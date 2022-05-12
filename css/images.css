@@ -1,0 +1,9 @@
+.profile--image {
+  padding: 0;
+  border: solid 3px black;
+
+  min-width: 100px;
+  min-height: auto;
+  width: 50%;
+  height: auto;
+}

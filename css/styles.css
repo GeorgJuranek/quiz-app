@@ -1,2 +1,7 @@
 @import "./global.css";
 @import "./boxes.css";
+@import "./images.css";
+
+:root {
+  --highlight: rgba(255, 255, 0, 0.7);
+}
