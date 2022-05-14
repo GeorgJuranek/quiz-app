@@ -45,6 +45,8 @@
   margin: 10%;
   padding: 5%;
 
+  margin-top: 200px;
+
   background-color: var(--highlight);
 
   display: grid;
@@ -72,7 +74,7 @@
 }
 
 /*#############################################*/
-@media (max-width: 273px) {
+@media (max-width: 273px), (max-height: 500px) {
   .big-box {
     height: 200px;
     /*
@@ -101,3 +103,58 @@
 }
 
 /*#############################################*/
+
+.create-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  z-index: -1;
+  width: 80vw;
+
+  xpadding-left: 30%;
+}
+
+.create-box__button {
+  height: 5vh;
+  width: 15vw;
+  min-width: 100px;
+
+  right: 0;
+  bottom: 130px;
+
+  border: solid 2px;
+  place-self: end;
+
+  margin: 10%;
+}
+
+.create-box__submit {
+  /*display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 5%;*/
+
+  display: flex;
+  flex-wrap: wrap;
+
+  border: solid 2px red;
+
+  padding: 5%;
+
+  /*width: 90vw;
+  padding-left: 10%;*/
+}
+.create-box__submit--highlight {
+  color: red;
+  text-decoration: underline;
+}
+
+.create-box__submit--expression {
+  font-size: 2rem;
+  color: red;
+
+  place-self: center;
+}
