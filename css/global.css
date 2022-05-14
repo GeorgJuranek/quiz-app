@@ -3,18 +3,34 @@ nav {
   position: fixed;
   bottom: 1%;
   left: auto;
+  z-index: 10;
+}
+
+body {
+  margin-bottom: 100px;
 }
 
 header {
   background-color: white;
+  position: fixed;
+  top: 1%;
+  left: auto;
+  width: 95vw;
+
+  z-index: 10;
 }
 
 h2:hover {
-  background-color: rgb(255, 255, 0);
+  background-color: var(--highlight);
+  /*rgb(255, 255, 0);*/
 }
 
 p:hover {
-  background-color: rgba(255, 255, 0, 0.6);
+  background-color: var(--highlight);
+}
+
+u:hover {
+  background-color: var(--highlight);
 }
 
 section {
@@ -24,7 +40,15 @@ section {
   margin: 3%;
 }
 
+section:first-child {
+  margin-top: 100px;
+}
+
 section:last-child {
   border-bottom-style: solid;
   border-bottom-width: 2px;
+}
+
+input {
+  width: 80%;
 }
