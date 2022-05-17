@@ -14,10 +14,10 @@
     </header>
 
     <nav class="big-box big-box--bottom">
-      <a class="big-box--items" href="">HOME</a>
-      <a class="big-box--items" href="">BOOKMARKS</a>
-      <a class="big-box--items" href="">CREATE</a>
-      <a class="big-box--items" href="">PROFILE</a>
+      <a class="big-box--items" href="./index.html">HOME</a>
+      <a class="big-box--items" href="./bookmark.html">BOOKMARKS</a>
+      <a class="big-box--items" href="./create.html">CREATE</a>
+      <a class="big-box--items" href="./profile.html">PROFILE</a>
     </nav>
 
     <main class="create-box">
@@ -65,42 +65,49 @@
 
       
       <section>
-            <h3>2) INSERT <u>QUESTION</u> UNDER THIS PART OF THE DOCUMENT:</h3>
-            <input type="text" required>
+            <h3 id="Question">2) INSERT <u>QUESTION</u> UNDER THIS PART OF THE DOCUMENT:</h3>
+            <input aria-labelledby="Question" type="text" required>
       </section>
 
       <section>
-            <h3>3) INSERT <u>CORRECT ANSWER</u> UNDER THIS PART OF THE DOCUMENT:</h3>
-            <input type="text" required>
+            <h3 id="Answer">3) INSERT <u>CORRECT ANSWER</u> UNDER THIS PART OF THE DOCUMENT:</h3>
+            <input aria-labelledby="Answer" type="text" required>
             </section>
       </section>
 
       <section>
-        <h3>4) ADD <u>IMPORTANT TAGS DIVIDED BY COMMAS </u> UNDER THIS PART OF THE DOCUMENT:</h3>
-        <input type="text" required>
+        <h3 id="Important-tags">4) ADD <u>IMPORTANT TAGS DIVIDED BY COMMAS </u> UNDER THIS PART OF THE DOCUMENT:</h3>
+        <input aria-labelledby="Important-tags" type="text" required>
         </section>
       </section>
 
-      <section class="create-box__submit">
+      <section 
+       class="create-box__submit">
 
-        <h2 class="create-box__submit--expression">
+        <h2 
+        class="create-box__submit--expression">
             <u>IMPORTANT INFORMATION BEFORE SUBMIT</u>
         </h2>
 
         <p class="create-box__submit--highlight"> If you are sure all information are correct you can use the submit-button here to submit your question with your answer. If you should have the slightest doubt about the correctness-level of your question or answer, please do everything to prevent this world from false-going as long as there is time
         </p>
 
-        <button class="create-box__button create-box__submit--highlight">SUBMIT</button>
-      
+
+
+          <button        
+            data-js="submitButton" 
+            class="create-box__button create-box__submit--highlight">
+            SUBMIT
+          </button>
 
       </section>
-
-      
-
-      
-
         
     </main>
+
+    <!--JAVASCRIPT-->
+      <script src="./test.js" defer>
+      </script>
+    <!--JAVASCRIPT-->
 
   </body>
 </html>
