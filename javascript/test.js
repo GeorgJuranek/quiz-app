@@ -6,10 +6,10 @@ function onSubmitClick() {
   //console.log("Button wird erkannt");
   submitButton.classList.toggle("testJs-class");
 
-  if (submitButton.innerHTML == "SUBMIT") {
+  /*if (submitButton.innerHTML == "SUBMIT") {
     console.log("wird veraendert");
     submitButton.innerHTML = "SUBMITED";
   } else {
     submitButton.innerHTML = "SUBMIT";
-  }
+  }*/
 }

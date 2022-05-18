@@ -11,3 +11,11 @@
   color: blue;
   background-color: rgba(0, 0, 255, 0.167);
 }
+
+.hide-it {
+  display: none;
+}
+
+.active {
+  display: block;
+}
