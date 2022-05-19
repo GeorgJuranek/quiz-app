@@ -1,23 +1,20 @@
 .big-box {
   border: solid 3px black;
-
   display: flex;
   justify-content: center;
-
   flex-wrap: wrap;
 
-  /*--->big-box hat 1 @media bei 273px*/
+  /* ---> big-box hat 1 @media bei 273px */
 }
 
-/*.big-box--top {
+/* .big-box--top {
   animation-name: shrink;
   animation-duration: 2s;
-}*/
+} */
 
 .big-box--bottom {
   justify-content: space-evenly;
   align-items: center;
-
   height: 5em;
   width: 95vw;
 }
@@ -25,62 +22,49 @@
 .big-box--items {
   height: 2em;
   width: 15ch;
-
   border: solid 3px black;
-
   justify-content: center;
-
   color: black;
 }
 
 .big-box--query {
   display: none;
 }
-/*#############################################*/
 
 .profilebox {
   border: dotted 5px black;
-
   max-width: 70vw;
   min-width: 50vw;
-
   margin: 10%;
   padding: 5%;
-
   margin-top: 200px;
-
   background-color: var(--highlight);
-
   display: grid;
-
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-
   justify-items: start;
   align-items: center;
-
   z-index: -1;
 }
 
 .profilebox__item--decoration {
   text-decoration: underline;
   text-decoration-style: dotted;
-
   display: inline;
 }
 
 .profilebox__aboutyou--input {
-  grid-row-start: 4;
-  grid-row-end: 5;
+  /* grid-row-start: 4;
+  grid-row-end: 5; */
+  grid-row: 4 5;
   width: 15em;
 }
 
-/*#############################################*/
 @media (max-width: 273px), (max-height: 500px) {
   .big-box {
     height: 200px;
-    /*
-    @keyframes shrink 
+
+    /* @keyframes shrink 
     {
       100% {
         height: 100%;
@@ -88,8 +72,7 @@
       0% {
         height:5% ;
       }
-    }
-    */
+    } */
   }
 
   .big-box--bottom {
@@ -104,51 +87,47 @@
   }
 }
 
-/*#############################################*/
-
 .create-box {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
 
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+
+  flex-flow: row wrap;
+  justify-content: flex-start;
   z-index: -1;
   width: 80vw;
 
-  xpadding-left: 30%;
+  /* xpadding-left: 30%; */
 }
 
 .create-box__button {
   height: 5vh;
   width: 15vw;
   min-width: 100px;
-
   right: 0;
   bottom: 130px;
-
   border: solid 2px;
   place-self: end;
-
   margin: 10%;
 }
 
 .create-box__submit {
-  /*display: grid;
+  /* display: grid;
   grid-auto-flow: column;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  column-gap: 5%;*/
+  column-gap: 5%; */
 
   display: flex;
   flex-wrap: wrap;
-
   border: solid 2px red;
-
   padding: 5%;
 
-  /*width: 90vw;
-  padding-left: 10%;*/
+  /* width: 90vw;
+  padding-left: 10%; */
 }
+
 .create-box__submit--highlight {
   color: red;
   text-decoration: underline;
@@ -157,6 +136,5 @@
 .create-box__submit--expression {
   font-size: 2rem;
   color: red;
-
   place-self: center;
 }
