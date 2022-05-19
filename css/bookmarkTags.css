@@ -3,7 +3,6 @@
   border-radius: 20px;
   width: 40%;
   padding: 5%;
-
   margin-left: 50vw;
 }
 
@@ -12,10 +11,8 @@
   border-radius: 20px;
   padding: 1%;
   background-color: whitesmoke;
-  color: rgb(88, 86, 86);
+  color: rgb(88 86 86);
 }
-
-/*#########################*/
 
 .bookmark {
   position: relative;
@@ -24,11 +21,9 @@
 .bookmark__button {
   width: 60px;
   height: auto;
-
   position: absolute;
-  right: 0vw;
+  right: 0;
   top: -1vh;
-
   border: none;
   z-index: 0;
   background-color: var(--highlight);
@@ -40,6 +35,7 @@
   height: auto;
   filter: invert(50%);
 }
+
 .bookmark-button__image:hover {
   filter: none;
   background: yellow;

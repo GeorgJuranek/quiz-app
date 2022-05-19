@@ -45,7 +45,8 @@
       </button>
     </nav>
 
-    <main data-js="mainIndex" class="hide-it"> <!--INDEX.HTML-->
+    <main data-js="mainIndex" class="hide-it">
+      <!--INDEX.HTML-->
       <section class="bookmark">
         <h2>QUESTION</h2>
 
@@ -229,9 +230,11 @@
           <list class="tag-container__tag">#tag1</list>
         </ul>
       </section>
-    </main> <!--INDEX.HTML-->
+    </main>
+    <!--INDEX.HTML-->
 
-    <main data-js="mainBookmarks" class="hide-it">  <!--BOOKMARKS.HTML-->
+    <main data-js="mainBookmarks" class="hide-it">
+      <!--BOOKMARKS.HTML-->
       <section class="bookmark">
         <h2>QUESTION</h2>
 
@@ -285,29 +288,31 @@
           <list class="tag-container__tag">#tag3</list>
         </ul>
       </section>
-    </main> <!--BOOKMARKS.HTML-->
+    </main>
+    <!--BOOKMARKS.HTML-->
 
-    <main  data-js="mainCreate" class="hide-it create-box">  <!--CREATE.HTML-->
-        
+    <main data-js="mainCreate" class="hide-it create-box">
+      <!--CREATE.HTML-->
+
       <section>
-          <h3>1) POLICY RIGHTS</h3>
-          <details>
+        <h3>1) POLICY RIGHTS</h3>
+        <details>
           <ol>
             <li>
               <details>
                 <summary>Instructions</summary>
                 <ol>
-                    <li>Please be specific with decription.</li>
-                    <li>Be careful with your spelling and grammar.</li>
-                    <li>Do not insult people inside your Question Box</li>
-                    <li>Unauthorized behaviour will be band</li>
+                  <li>Please be specific with decription.</li>
+                  <li>Be careful with your spelling and grammar.</li>
+                  <li>Do not insult people inside your Question Box</li>
+                  <li>Unauthorized behaviour will be band</li>
                 </ol>
               </details>
             </li>
-            <br>
+            <br />
             <li>
               <details>
-              <summary>Rights</summary>
+                <summary>Rights</summary>
                 <ol>
                   <li>You are not in cansas anymore Dorethy</li>
                   <li>This is the real world and it will sue you</li>
@@ -315,63 +320,68 @@
                 </ol>
               </details>
             </li>
-            <br>
+            <br />
             <li>
               <details>
                 <summary>How-to-use</summary>
-                  <ul>
-                    <li> Have fun</li>
-                    <li>Dont be mad if we sue you :)</li>
-                  </ul>
+                <ul>
+                  <li>Have fun</li>
+                  <li>Dont be mad if we sue you :)</li>
+                </ul>
               </details>
             </li>
-            <br>
+            <br />
           </ol>
         </details>
       </section>
 
-      
       <section>
-            <h3 id="Question">2) INSERT <u>QUESTION</u> UNDER THIS PART OF THE DOCUMENT:</h3>
-            <input aria-labelledby="Question" type="text" required>
+        <h3 id="Question">
+          2) INSERT <u>QUESTION</u> UNDER THIS PART OF THE DOCUMENT:
+        </h3>
+        <input aria-labelledby="Question" type="text" required />
       </section>
 
       <section>
-            <h3 id="Answer">3) INSERT <u>CORRECT ANSWER</u> UNDER THIS PART OF THE DOCUMENT:</h3>
-            <input aria-labelledby="Answer" type="text" required>
-            </section>
+        <h3 id="Answer">
+          3) INSERT <u>CORRECT ANSWER</u> UNDER THIS PART OF THE DOCUMENT:
+        </h3>
+        <input aria-labelledby="Answer" type="text" required />
       </section>
 
       <section>
-        <h3 id="Important-tags">4) ADD <u>IMPORTANT TAGS DIVIDED BY COMMAS </u> UNDER THIS PART OF THE DOCUMENT:</h3>
-        <input aria-labelledby="Important-tags" type="text" required>
-        </section>
+        <h3 id="Important-tags">
+          4) ADD <u>IMPORTANT TAGS DIVIDED BY COMMAS </u> UNDER THIS PART OF THE
+          DOCUMENT:
+        </h3>
+        <input aria-labelledby="Important-tags" type="text" required />
       </section>
 
-      <section 
-       class="create-box__submit">
-
-        <h2 
-        class="create-box__submit--expression">
-            <u>IMPORTANT INFORMATION BEFORE SUBMIT</u>
+      <section class="create-box__submit">
+        <h2 class="create-box__submit--expression">
+          <u>IMPORTANT INFORMATION BEFORE SUBMIT</u>
         </h2>
 
-        <p class="create-box__submit--highlight"> If you are sure all information are correct you can use the submit-button here to submit your question with your answer. If you should have the slightest doubt about the correctness-level of your question or answer, please do everything to prevent this world from false-going as long as there is time
+        <p class="create-box__submit--highlight">
+          If you are sure all information are correct you can use the
+          submit-button here to submit your question with your answer. If you
+          should have the slightest doubt about the correctness-level of your
+          question or answer, please do everything to prevent this world from
+          false-going as long as there is time
         </p>
 
-
-
-          <button        
-            data-js="submitButton" 
-            class="create-box__button create-box__submit--highlight">
-            SUBMIT
-          </button>
-
+        <button
+          data-js="submitButton"
+          class="create-box__button create-box__submit--highlight"
+        >
+          SUBMIT
+        </button>
       </section>
-        
-    </main>   <!--CREATE.HTML-->
+    </main>
+    <!--CREATE.HTML-->
 
-    <main  data-js="mainProfile" class="hide-it profilebox">  <!--PROFILE.HTML-->
+    <main data-js="mainProfile" class="hide-it profilebox">
+      <!--PROFILE.HTML-->
       <img
         class="profile--image"
         src="images/maxmuster.jpg"
@@ -412,11 +422,12 @@
       </details>
 
       <button>LOGOUT</button>
-    </main> <!--PROFILE.HTML-->
+    </main>
+    <!--PROFILE.HTML-->
 
     <!--JAVASCRIPT-->
     <script src="./javascript/bookmark.js" defer></script>
-    <script src="./javascript/toggleAnswer.js" defer></script>
+    <script src="./javascript/index.js" defer></script>
     <script src="./javascript/mainManager.js" defer></script>
     <!--JAVASCRIPT-->
   </body>
