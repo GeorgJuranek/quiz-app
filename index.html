@@ -14,18 +14,44 @@
     </header>
 
     <nav class="big-box big-box--bottom">
-      <a class="big-box--items" href="./index.html">HOME</a>
+      <!--<a class="big-box--items" href="./index.html">HOME</a>
       <a class="big-box--items" href="./bookmark.html">BOOKMARKS</a>
       <a class="big-box--items" href="./create.html">CREATE</a>
-      <a class="big-box--items" href="./profile.html">PROFILE</a>
+      <a class="big-box--items" href="./profile.html">PROFILE</a>-->
+
+      <button data-js="homeButton" class="big-box--items" href="./index.html">
+        HOME
+      </button>
+      <button
+        data-js="bookmarksButton"
+        class="big-box--items"
+        href="./bookmark.html"
+      >
+        BOOKMARKS
+      </button>
+      <button
+        data-js="createButton"
+        class="big-box--items"
+        href="./create.html"
+      >
+        CREATE
+      </button>
+      <button
+        data-js="profileButton"
+        class="big-box--items"
+        href="./profile.html"
+      >
+        PROFILE
+      </button>
     </nav>
 
-    <main>
+    <main data-js="mainIndex" class="hide-it"> <!--INDEX.HTML-->
       <section class="bookmark">
         <h2>QUESTION</h2>
 
-        <button class="bookmark__button">
+        <button data-js="bookmarkClick" class="bookmark__button">
           <img
+            data-js="bookmarkIcon"
             class="bookmark-button__image"
             src="./images/paper-clip1.png"
             alt="Bookmark"
@@ -39,7 +65,18 @@
           vel dolorem neque saepe.
         </p>
 
-        <button>SHOW ANSWER</button>
+        <button data-js="toggleAnswer">
+          <span data-js="showAnswerTxt">SHOW ANSWER</span>
+          <section data-js="correctAnswerTxt" class="hide-it">
+            THE CORRECT ANSWER HERE
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+              iure ad, doloremque ab ex aperiam commodi reiciendis totam tempora
+              hic rem quo praesentium doloribus est architecto porro saepe in
+              laborum?
+            </p>
+          </section>
+        </button>
 
         <ul class="tag-container">
           <list class="tag-container__tag">#tag1</list>
@@ -192,6 +229,195 @@
           <list class="tag-container__tag">#tag1</list>
         </ul>
       </section>
-    </main>
+    </main> <!--INDEX.HTML-->
+
+    <main data-js="mainBookmarks" class="hide-it">  <!--BOOKMARKS.HTML-->
+      <section class="bookmark">
+        <h2>QUESTION</h2>
+
+        <button class="bookmark__button">
+          <img
+            class="bookmark-button__image bookmark-button__image--marked"
+            src="./images/paper-clip1.png"
+            alt="Bookmark"
+          />
+        </button>
+
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+          perferendis omnis laborum dolor voluptates sunt repudiandae velit
+          optio impedit aliquam, nihil animi repellat? Modi obcaecati corrupti
+          vel dolorem neque saepe.
+        </p>
+
+        <button>SHOW ANSWER</button>
+
+        <ul class="tag-container">
+          <list class="tag-container__tag">#tag1</list>
+          <list class="tag-container__tag">#tag2</list>
+          <list class="tag-container__tag">#tag3</list>
+        </ul>
+      </section>
+
+      <section class="bookmark">
+        <h2>QUESTION</h2>
+
+        <button class="bookmark__button">
+          <img
+            class="bookmark-button__image bookmark-button__image--marked"
+            src="./images/paper-clip1.png"
+            alt="Bookmark"
+          />
+        </button>
+
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+          perferendis omnis laborum dolor voluptates sunt repudiandae velit
+          optio impedit aliquam, nihil animi repellat? Modi obcaecati corrupti
+          vel dolorem neque saepe.
+        </p>
+
+        <button>SHOW ANSWER</button>
+
+        <ul class="tag-container">
+          <list class="tag-container__tag">#tag1</list>
+          <list class="tag-container__tag">#tag2</list>
+          <list class="tag-container__tag">#tag3</list>
+        </ul>
+      </section>
+    </main> <!--BOOKMARKS.HTML-->
+
+    <main  data-js="mainCreate" class="hide-it create-box">  <!--CREATE.HTML-->
+        
+      <section>
+          <h3>1) POLICY RIGHTS</h3>
+          <details>
+          <ol>
+            <li>
+              <details>
+                <summary>Instructions</summary>
+                <ol>
+                    <li>Please be specific with decription.</li>
+                    <li>Be careful with your spelling and grammar.</li>
+                    <li>Do not insult people inside your Question Box</li>
+                    <li>Unauthorized behaviour will be band</li>
+                </ol>
+              </details>
+            </li>
+            <br>
+            <li>
+              <details>
+              <summary>Rights</summary>
+                <ol>
+                  <li>You are not in cansas anymore Dorethy</li>
+                  <li>This is the real world and it will sue you</li>
+                  <li>Dont behave like you don't know this.</li>
+                </ol>
+              </details>
+            </li>
+            <br>
+            <li>
+              <details>
+                <summary>How-to-use</summary>
+                  <ul>
+                    <li> Have fun</li>
+                    <li>Dont be mad if we sue you :)</li>
+                  </ul>
+              </details>
+            </li>
+            <br>
+          </ol>
+        </details>
+      </section>
+
+      
+      <section>
+            <h3 id="Question">2) INSERT <u>QUESTION</u> UNDER THIS PART OF THE DOCUMENT:</h3>
+            <input aria-labelledby="Question" type="text" required>
+      </section>
+
+      <section>
+            <h3 id="Answer">3) INSERT <u>CORRECT ANSWER</u> UNDER THIS PART OF THE DOCUMENT:</h3>
+            <input aria-labelledby="Answer" type="text" required>
+            </section>
+      </section>
+
+      <section>
+        <h3 id="Important-tags">4) ADD <u>IMPORTANT TAGS DIVIDED BY COMMAS </u> UNDER THIS PART OF THE DOCUMENT:</h3>
+        <input aria-labelledby="Important-tags" type="text" required>
+        </section>
+      </section>
+
+      <section 
+       class="create-box__submit">
+
+        <h2 
+        class="create-box__submit--expression">
+            <u>IMPORTANT INFORMATION BEFORE SUBMIT</u>
+        </h2>
+
+        <p class="create-box__submit--highlight"> If you are sure all information are correct you can use the submit-button here to submit your question with your answer. If you should have the slightest doubt about the correctness-level of your question or answer, please do everything to prevent this world from false-going as long as there is time
+        </p>
+
+
+
+          <button        
+            data-js="submitButton" 
+            class="create-box__button create-box__submit--highlight">
+            SUBMIT
+          </button>
+
+      </section>
+        
+    </main>   <!--CREATE.HTML-->
+
+    <main  data-js="mainProfile" class="hide-it profilebox">  <!--PROFILE.HTML-->
+      <img
+        class="profile--image"
+        src="images/maxmuster.jpg"
+        alt="Welcome back"
+      />
+
+      <u><h3>MEMBER</h3></u>
+
+      <div>
+        <h3 class="profilebox__item--decoration">Name:</h3>
+        <input type="text" />
+      </div>
+
+      <div>
+        <h3 class="profilebox__item--decoration">First Name:</h3>
+        <input type="text" />
+      </div>
+
+      <div>
+        <h3 class="profilebox__item--decoration">Information about you:</h3>
+        <input type="text" class="profilebox__aboutyou--input" />
+      </div>
+
+      <div>
+        <tag></tag>
+        <tag></tag>
+        <tag></tag>
+        <tag></tag>
+      </div>
+
+      <details>
+        <summary class="profilebox__item--decoration">
+          IMPORTANT INFORMATION FOR LOGOUT CLICK HERE FOR SOME DETAILS
+        </summary>
+        If you don't like our services you can logout everytime you feel like
+        it. Honestly, we don't mind it, just lock out, ok? Its fine. really. We
+        stay cool.
+      </details>
+
+      <button>LOGOUT</button>
+    </main> <!--PROFILE.HTML-->
+
+    <!--JAVASCRIPT-->
+    <script src="./javascript/bookmark.js" defer></script>
+    <script src="./javascript/toggleAnswer.js" defer></script>
+    <script src="./javascript/mainManager.js" defer></script>
+    <!--JAVASCRIPT-->
   </body>
 </html>
